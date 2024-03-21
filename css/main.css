@@ -1,0 +1,383 @@
+body {
+  color: white;
+  font-size: 15px;
+}
+button {
+  cursor: pointer;
+}
+.wrap {
+  width: 100%;
+  max-width: 1903px;
+  position: relative;
+  background-color: #000;
+  margin: auto;
+}
+.inner {
+  width: 52%;
+  margin: auto;
+  transform: translateX(8%);
+}
+/* side-nav */
+.side-nav {
+  width: 8%;
+  height: 100vh;
+  background-color: #222;
+  color: white;
+  position: fixed;
+}
+.nav-img {
+  width: 100%;
+  height: 135px;
+  background-image: url(../image/man_smoke.jpg);
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+}
+.nav-img::after {
+  content: '';
+  width: 100%;
+  height: 135px;
+  background-color: rgba(255, 255, 255, 0.207);
+  position: absolute;
+}
+.nav-icon {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.nav-icon:hover {
+  background-color: #000;
+}
+.side-nav .nav-icon:nth-child(2) {
+  background-color: #000;
+}
+/* section01 */
+.section01 {
+  width: 100%;
+}
+.section01>h1 {
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 80px;
+}
+.section01>p {
+  text-align: center;
+  margin: 40px;
+}
+.section01 img {
+  width: 100%;
+}
+/* name */
+.name h2 {
+  width: 200px;
+  font-size: 1.6rem;
+  padding-bottom: 25px;
+  border-bottom: 2px solid gray;
+  margin-bottom: 20px;
+}
+.name p {
+  text-align: justify;
+  color: gray;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+}
+/* skills */
+.skills>h2 {
+  font-size: 1.4rem;
+  padding: 40px 0;
+}
+.skills>p {
+  margin: 15px 0;
+  color: gray;
+}
+.skills>p:nth-child(2) {
+  margin-top: 0;
+}
+.grap {
+  height: 28px;
+  display: flex;
+}
+.grap div:nth-child(1) {
+  background-color: gray;
+}
+.grap div:nth-child(2) {
+  background-color: white;
+}
+.grap01 div:nth-child(1) {
+  flex: 16;
+}
+.grap01 div:nth-child(2) {
+  flex: 1;
+}
+.grap02 div:nth-child(1) {
+  flex: 16;
+}
+.grap02 div:nth-child(2) {
+  flex: 3;
+}
+.grap03 div:nth-child(1) {
+  flex: 16;
+}
+.grap03 div:nth-child(2) {
+  flex: 4;
+}
+.total {
+  height: 120px;
+  background-color: white;
+  margin-top: 37px;
+  margin-bottom: 30px;
+  display: flex;
+}
+.total div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+.total div h3 {
+  font-size: 1.2rem;
+}
+.btn {
+  width: 210px;
+  height: 45px;
+  margin-bottom: 45px;
+}
+/* price */
+.price h2 {
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+}
+.card-wrap {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  gap: 10px;
+}
+.card {
+  width: 50%;
+  height: 535px;
+  background-color: #999;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+}
+.card h3,
+.card p,
+.card div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card h3 {
+  background-color: #3a3a3a;
+  color: #999;
+  flex: 3;
+  font-size: 1.2rem;
+}
+.card p {
+  border-bottom: 1px solid gray;
+  flex: 2;
+  color: #404040;
+}
+.card p:nth-child(6) {
+  flex: 4;
+  flex-direction: column;
+}
+.card p:nth-child(6) span:nth-child(1) {
+  color: #0b0b0b;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.card p:nth-child(6) span:nth-child(2) {
+  color: #696969;
+}
+.card div {
+  background-color: #909090;
+  flex: 3;
+}
+.card div button {
+  width: 105px;
+  height: 45px;
+  background-color: #999;
+}
+/* reputation */
+.reputation h2 {
+  padding-top: 55px;
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+}
+.reputation-img {
+  width: 80px;
+  height: 80px;
+  background-color: gray;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.reputation>div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #737174;
+}
+.reputation>div h6 {
+  margin-bottom: 20px;
+}
+.reputation>div p {
+  font-size: 0.8rem;
+}
+/* photos */
+.photos {
+  margin-top: 150px;
+}
+.photos h2 {
+  width: 200px;
+  font-size: 1.6rem;
+  padding-bottom: 25px;
+  border-bottom: 2px solid gray;
+  margin-bottom: 10px;
+}
+.photo-wrap {
+  display: grid;
+  width: 100%;
+  height: 1550px;
+  margin: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(9, auto);
+  gap: 10px;
+}
+.photo-wrap div {
+  box-sizing: border-box;
+}
+.photo-wrap img {
+  width: 100%;
+  height: 100%;
+}
+.photo01 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+.photo02 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+}
+.photo03 {
+  grid-column: 1 / 2;
+  grid-row: 3 / 8;
+}
+.photo04 {
+  grid-column: 2 / 3;
+  grid-row: 4 / 6;
+}
+.photo05 {
+  grid-column: 2 / 3;
+  grid-row: 6 / 8;
+}
+.photo06 {
+  grid-column: 1 / 2;
+  grid-row: 8 / 10;
+}
+.photo07 {
+  grid-column: 2 / 3;
+  grid-row: 8 / 10;
+}
+/* contact */
+.contact {
+  margin-top: 150px;
+}
+.contact h2 {
+  width: 200px;
+  font-size: 1.6rem;
+  padding-bottom: 25px;
+  border-bottom: 2px solid gray;
+  margin-bottom: 10px;
+}
+.contact div p {
+  margin: 20px 0;
+  color: #737273;
+}
+.contact p i {
+  width: 50px;
+  color: white;
+}
+.contact>p {
+  margin-top: 55px;
+  color: #737273;
+  margin-bottom: 10px;
+}
+.contact form {
+  width: 100%;
+}
+.contact form input {
+  width: 100%;
+  padding: 18px 10px;
+  box-sizing: border-box;
+  margin: 7px 0;
+}
+.contact form button {
+  width: 190px;
+  height: 45px;
+  margin: 7px 0;
+  text-transform: uppercase;
+}
+/*  footer */
+.footer {
+  margin-top: 140px;
+  padding-bottom: 30px;
+  color: #737678;
+}
+.footer p:nth-child(1) {
+  margin-bottom: 20px;
+}
+.footer span {
+  text-decoration: underline;
+}
+@media screen and (max-width:768px) {
+  body {
+    font-size: 13px;
+  }
+  .photo-wrap {
+    height: 2500px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    gap: 5px;
+  }
+  .photo-wrap>div {
+    grid-column: 1/2;
+  }
+  .photo01 {
+    grid-row: 1/2;
+  }
+  .photo02 {
+    grid-row: 2/3;
+  }
+  .photo03 {
+    grid-row: 3/4;
+  }
+  .photo04 {
+    grid-row: 4/5;
+  }
+  .photo05 {
+    grid-row: 5/6;
+  }
+  .photo06 {
+    grid-row: 6/7;
+  }
+  .photo07 {
+    grid-row: 7/8;
+  }
+}
+@media screen and (max-width:568px) {
+  body {
+    font-size: 10px;
+  }
+  .photo-wrap {
+    height: 1600px; 
+  }
+}
